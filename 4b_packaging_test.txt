@@ -1,0 +1,10 @@
+Command:
+python3
+
+Python 3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0] on linux
+
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> print(emotion_detector("I am very angry"))
+
+Output:
+{'anger': 0.97299534, 'disgust': 0.007920562, 'fear': 0.021403823, 'joy': 0.0111511685, 'sadness': 0.047718644, 'dominant_emotion': 'anger'}
