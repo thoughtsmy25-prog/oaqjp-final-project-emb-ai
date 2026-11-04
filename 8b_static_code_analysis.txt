@@ -1,0 +1,6 @@
+Command:
+python3 -m pylint server.py
+
+Terminal output:
+----------------------------------------------------------------------
+Your code has been rated at 10.00/10
