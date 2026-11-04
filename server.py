@@ -1,10 +1,10 @@
-"""Flask web application for emotion detection."""
+"""Flask web application for the Watson NLP emotion detector."""
 
 from flask import Flask, render_template, request
 
 from EmotionDetection.emotion_detection import emotion_detector
 
-app = Flask(__name__)
+app = Flask(__name__)  # pylint: disable=invalid-name
 
 
 @app.route("/")
@@ -15,7 +15,7 @@ def home():
 
 @app.route("/emotionDetector")
 def emotion_detector_route():
-    """Analyze submitted text and handle empty or invalid input."""
+    """Analyze user text and return emotion scores or a blank-input message."""
     text_to_analyze = request.args.get("textToAnalyze", "")
     result = emotion_detector(text_to_analyze)
 
